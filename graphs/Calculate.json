@@ -1,0 +1,58 @@
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "Calculate",
+        "environment": {}
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {
+        "Multiply": {
+            "component": "math/Multiply",
+            "metadata": {
+                "x": 36,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Multiply"
+            }
+        },
+        "Display": {
+            "component": "core/Output",
+            "metadata": {
+                "x": 144,
+                "y": 36,
+                "width": 72,
+                "height": 72,
+                "label": "Display"
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "Multiply",
+                "port": "product"
+            },
+            "tgt": {
+                "process": "Display",
+                "port": "in"
+            }
+        },
+        {
+            "data": "6",
+            "tgt": {
+                "process": "Multiply",
+                "port": "multiplicand"
+            }
+        },
+        {
+            "data": "7",
+            "tgt": {
+                "process": "Multiply",
+                "port": "multiplier"
+            }
+        }
+    ]
+}
