@@ -1,0 +1,12 @@
+{
+  "name": "davidnoflo",
+  "version": "0.0.1",
+  "dependencies": {
+    "noflo": "^0.7.9",
+    "noflo-core": "^0.2.3",
+    "noflo-filesystem": "^1.0.8",
+    "noflo-interaction": "^0.1.0",
+    "noflo-math": "0.0.8",
+    "noflo-nodejs": "^0.7.2"
+  }
+}
